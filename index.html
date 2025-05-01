@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="password-screen">
+    <h1>🔐 Enter the secret word</h1>
+    <input type="password" id="password-input" placeholder="Enter password..." />
+    <button onclick="checkPassword()">Unlock</button>
+    <p id="error-message"></p>
+  </div>
+
+  <div id="letter-screen" style="display:none;">
+    <audio autoplay loop>
+      <source src="https://www.youtube.com/embed/2Vv-BfVoq4g?autoplay=1" type="audio/mp3">
+    </audio>
+    <div class="candlelight">
+      <h1>💌 My Love Letter</h1>
+      <p>Your beautiful love letter goes here...<br><br>You can open this file in a text editor and paste your real message here.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
